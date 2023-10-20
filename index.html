@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header id="home">
+        <!-- navbar -->
+        <nav id="nav">
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <img src="" class="logo" alt="logo" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">about</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll-link">services</a>
+                        </li>
+                        <li>
+                            <a href="#tours" class="scroll-link">tours</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+            <div class="container">
+                <h1>Salt n Peppa</h1>
+                <p>
+                    "Embark on a Gastronomic Journey: Savor the Flavor, Indulge in Culinary Delights!"
+                </p>
+                <a href="#tours" class="scroll-link btn btn-white">explore menu</a>
+            </div>
+        </div>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+        <div class="title">
+            <h2>about <span>us</span></h2>
+            <!-- <p>At [Restaurant Name], we believe in the power of exceptional dining experiences. Our journey began with a
+                simple yet profound vision: to create a place where people can come together to celebrate life, savor
+                delicious food, and forge unforgettable memories.
+
+                Nestled in the heart of [City], [Restaurant Name] has become a culinary haven, where passion meets
+                innovation. Our team of dedicated chefs and hospitality professionals strives to exceed your
+                expectations with every visit.
+
+                <h2>Our Philosophy:</h2>
+
+                We are more than just a restaurant; we are a place where stories are shared, laughter echoes, and
+                connections are strengthened. Our philosophy revolves around three key pillars:
+
+                Culinary Excellence: Our menu is a culinary masterpiece, carefully crafted to awaken your taste buds
+                with a symphony of flavors. We use the finest, locally sourced ingredients to prepare each dish with
+                precision and creativity. Whether you're a fan of traditional favorites or adventurous global cuisine,
+                our diverse menu offers something to delight every palate.
+
+                Warm Hospitality: At [Restaurant Name], we believe that great food should be complemented by warm and
+                attentive service. Our dedicated staff is committed to making you feel at home, ensuring that your
+                dining experience is not just a meal, but a celebration.
+
+                Inviting Ambiance: Step into our restaurant, and you'll be transported to a welcoming, cozy environment
+                designed to provide the perfect backdrop for your special moments. Our decor reflects a blend of modern
+                elegance and timeless charm, creating an atmosphere that's ideal for any occasion.
+
+                <h2>Community and Sustainability</h2>
+
+                We are proud to be an active part of the [City] community. Our commitment to sustainability extends
+                beyond our kitchen and into our local partnerships. We source ingredients from nearby farmers and
+                artisans, reducing our carbon footprint while supporting the community.
+
+                At [Restaurant Name], we look forward to sharing our passion for food and hospitality with you. Join us,
+                and let's create unforgettable moments one meal at a time. Your presence honors our commitment to
+                excellence, and we can't wait to serve you. Welcome to a world of exceptional dining experiences.</p> -->
+        </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="section" style="height: auto !important;">
+        <div class="title">
+            <h2>our <span>Menu</span></h2>
+        </div>
+        <div class="btn-container">
+            <button class="filter-btn" type="button" data-category="all">All</button>
+            <button class="filter-btn" type="button" data-category="breakfast">Breakfast</button>
+            <button class="filter-btn" type="button" data-category="lunch">Lunch</button>
+            <button class="filter-btn" type="button" data-category="shakes">Shakes</button>
+        </div>
+        <!--menu items-->
+        <div class="section-center">
+            <!--single item-->
+            <article class="menu-item">
+                <img src="./menu-item.jpeg" class="photo" alt="menu-item">
+                <div class="item-info">
+                    <div class="header">
+                        <h4>buttermilk pancakes</h4>
+                        <h4 class="price">£15</h4>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, officia magni minus ipsam neque ad
+                        nihil
+                        ullam. Numquam, eius ab.</p>
+                </div>
+            </article>
+            
+            
+        </div>
+    </section>
+    <section id="reviews" class="section">
+        <div class="title">
+            <h2>Your <span>Reviews</span></h2>
+            <section class="container">
+                <!-- title -->
+                <div class="title">
+
+                    <div class="underline"></div>
+                </div>
+                <!-- review -->
+                <article class="review">
+                    <div class="img-container">
+                        <img src="" id="person-img" alt="" />
+                    </div>
+                    <h4 id="author"></h4>
+                    <p id="job"></p>
+                    <p id="info">
+
+                    </p>
+                    <!-- prev next buttons-->
+                    <div class="button-container">
+                        <button class="prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <!-- random button -->
+                    <button class="random-btn">surprise me</button>
+                </article>
+            </section>
+        </div>
+    </section>
+    <footer class="section">
+        <p>
+            copyright &copy; backroads travel tours company
+            <span id="date"></span>. all rights reserved
+        </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
