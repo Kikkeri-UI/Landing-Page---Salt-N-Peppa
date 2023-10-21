@@ -189,7 +189,7 @@ function displayMenu(menuItem){
                 <h4>${item.title}</h4>
                 <h4 class="price">${item.price}</h4>
             </div>
-            <p> class="ptop" ${item.desc}</p>
+            <p class="ptop">  ${item.desc}</p>
         </div>
     </article>`
 
@@ -206,7 +206,7 @@ function displayCategoryFilters(){
         if(!values.includes(item.category)){
             values.push(item.category);
         }
-        console.log(values);
+        //console.log(values);
         return values;
         
 
@@ -238,3 +238,19 @@ filterBtns.forEach(function(filterBtn){
     })
 })
 }
+
+// FAQ
+
+const questions = document.querySelectorAll('.question');
+
+questions.forEach((question)=>{
+    const btn = question.querySelector('.question-btn');
+    btn.addEventListener('click',()=>{
+       questions.forEach(function(item){
+        if(item !== question){
+            item.classList.remove('show-text');
+        }
+       })
+       question.classList.toggle('show-text');
+    })
+})
