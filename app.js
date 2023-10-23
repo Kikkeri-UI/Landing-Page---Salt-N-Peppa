@@ -276,6 +276,30 @@ about.addEventListener('click',(e)=>{
     }
 })
 
+// fixed nav bar and back-to-top
+
+const navBar = document.getElementById('nav');
+const topLink = document.querySelector('.top-link');
+
+window.addEventListener('scroll',(e)=>{
+    const scrolllHeight = window.pageYOffset;
+    const navHeight = navBar.getBoundingClientRect().height;
+    if(scrolllHeight > navHeight){
+        navBar.classList.add('fixed-nav');
+    }
+    else{
+        navBar.classList.remove('fixed-nav')
+    }
+    if(scrolllHeight > 500){
+        topLink.classList.add('show-link');
+    }
+    else{
+        topLink.classList.remove('show-link')
+    }
+})
+
+
+
 
 
 

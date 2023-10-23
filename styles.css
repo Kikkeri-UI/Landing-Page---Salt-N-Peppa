@@ -348,13 +348,13 @@ header {
 #reviews{
     height: 80;
 }
-#services, #faq {
+/* #services, #faq {
   background: var(--clr-white);
 }
 #tours{
     background: var(--clr-white);
 
-}
+} */
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
