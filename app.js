@@ -34,7 +34,7 @@ const menu = [
         title: "buttermilk pancakes",
         category: "breakfast",
         price: 15.99,
-        img: "./images/item-1.jpeg",
+        img: "./Images/item-1.jpeg",
         desc: `A delightful stack of fluffy buttermilk pancakes, served with a drizzle of pure maple syrup and a dollop of fresh whipped cream. The perfect way to start your day. `,
     },
     {
@@ -42,7 +42,7 @@ const menu = [
         title: "diner double",
         category: "lunch",
         price: 13.99,
-        img: "./images/item-2.jpeg",
+        img: "./Images/item-2.jpeg",
         desc: `Our signature Diner Double burger features two juicy beef patties, melted cheese, fresh lettuce, and a special house sauce. It's a classic with a modern twist.`,
     },
     {
@@ -50,7 +50,7 @@ const menu = [
         title: "godzilla milkshake",
         category: "shakes",
         price: 6.99,
-        img: "./images/item-3.jpeg",
+        img: "./Images/item-3.jpeg",
         desc: `The Godzilla Milkshake is a monstrous treat! Indulge in a creamy blend of organic flavors, topped with whipped cream and sprinkled with colorful jimmies. A shake that's larger than life.`,
     },
     {
@@ -58,7 +58,7 @@ const menu = [
         title: "country delight",
         category: "breakfast",
         price: 20.99,
-        img: "./images/item-4.jpeg",
+        img: "./Images/item-4.jpeg",
         desc: `Experience the taste of the countryside with our Country Delight breakfast. This hearty platter includes farm-fresh eggs, crispy bacon, golden hash browns, and a warm, buttered biscuit.`,
     },
     {
@@ -66,7 +66,7 @@ const menu = [
         title: "egg attack",
         category: "lunch",
         price: 22.99,
-        img: "./images/item-5.jpeg",
+        img: "./Images/item-5.jpeg",
         desc: `Our Egg Attack lunch option is a flavor explosion! It features a fluffy omelet stuffed with a variety of fresh vegetables, served with a side of crispy, seasoned fries.`,
     },
     {
@@ -74,7 +74,7 @@ const menu = [
         title: "oreo dream",
         category: "shakes",
         price: 18.99,
-        img: "./images/item-6.jpeg",
+        img: "./Images/item-6.jpeg",
         desc: `For all the cookie lovers out there, the Oreo Dream shake is a dream come true. A creamy blend of crushed Oreos and vanilla ice cream, topped with a crown of Oreo chunks.`,
     },
     {
@@ -82,7 +82,7 @@ const menu = [
         title: "bacon overflow",
         category: "breakfast",
         price: 8.99,
-        img: "./images/item-7.jpeg",
+        img: "./Images/item-7.jpeg",
         desc: `Satisfy your bacon cravings with the Bacon Overflow breakfast. Crispy bacon strips piled high on a bed of fluffy scrambled eggs. A breakfast that overflows with flavor.`,
     },
     {
@@ -90,7 +90,7 @@ const menu = [
         title: "american classic",
         category: "lunch",
         price: 12.99,
-        img: "./images/item-8.jpeg",
+        img: "./Images/item-8.jpeg",
         desc: `The American Classic lunch offers a taste of nostalgia with a modern twist. Enjoy a classic grilled cheese sandwich with a side of tomato soup, perfect for dipping.`,
     },
     {
@@ -98,7 +98,7 @@ const menu = [
         title: "quarantine buddy",
         category: "shakes",
         price: 16.99,
-        img: "./images/item-9.jpeg",
+        img: "./Images/item-9.jpeg",
         desc: `Our Quarantine Buddy shake is the ultimate comfort drink. A creamy concoction of nostalgic flavors that will keep you company during any time of the day.`,
     },
     {
@@ -106,7 +106,7 @@ const menu = [
         title: "Savory Delight Combo",
         category: "Combo Meal",
         price: 24.99,
-        img: "./images/item-9.jpeg",
+        img: "./Images/item-9.jpeg",
         desc: "Our Savory Delight Combo is the perfect combination of flavors. Enjoy a juicy burger with your choice of toppings, a side of crispy fries, and a refreshing drink."
     }
 ];
