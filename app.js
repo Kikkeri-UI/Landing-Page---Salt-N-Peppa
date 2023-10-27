@@ -107,7 +107,7 @@ const menu = [
         category: "Combo Meal",
         price: 24.99,
         img: "./images/item-9.jpeg",
-        desc: "Our Savory Delight Combo is the perfect combination of flavors. Enjoy a juicy burger with your choice of toppings, a side of crispy fries, and a refreshing drink. It's a complete meal that's sure to satisfy your taste buds."
+        desc: "Our Savory Delight Combo is the perfect combination of flavors. Enjoy a juicy burger with your choice of toppings, a side of crispy fries, and a refreshing drink."
     }
 ];
 
@@ -171,7 +171,7 @@ function generateRandomNumber() {
 const toggleBtn = document.querySelector('.nav-toggle');
 const links = document.querySelector('.links-container');
 
-toggleBtn.addEventListener('click',function(){
+toggleBtn.addEventListener('click', function () {
     links.classList.toggle('show-links');
 });
 
@@ -180,8 +180,8 @@ toggleBtn.addEventListener('click',function(){
 const sectionCenter = document.querySelector('.section-center');
 
 
-function displayMenu(menuItem){
-    let menuItems = menuItem.map((item)=>{
+function displayMenu(menuItem) {
+    let menuItems = menuItem.map((item) => {
         return `<article class="menu-item">
         <img src="${item.img}" class="photo" alt="${item.title}">
         <div class="item-info">
@@ -201,57 +201,57 @@ function displayMenu(menuItem){
 
 // filterBtns 
 
-function displayCategoryFilters(){
-    const categories = menu.reduce(function(values,item){
-        if(!values.includes(item.category)){
+function displayCategoryFilters() {
+    const categories = menu.reduce(function (values, item) {
+        if (!values.includes(item.category)) {
             values.push(item.category);
         }
         //console.log(values);
         return values;
-        
 
-    },['all'])
-    const categoryBtns = categories.map(function(category){
-        return `<button class="filter-btn" type="button" data-category="${category}">${category}</button>`  
+
+    }, ['all'])
+    const categoryBtns = categories.map(function (category) {
+        return `<button class="filter-btn" type="button" data-category="${category}">${category}</button>`
     }).join('');
     const btnContainer = document.querySelector('.btn-container');
     btnContainer.innerHTML = categoryBtns;
     const filterBtns = document.querySelectorAll('.filter-btn');
 
-filterBtns.forEach(function(filterBtn){
-    filterBtn.addEventListener('click',function(e){
-        const category = e.currentTarget.dataset.category;
-        // console.log(category);
-        const filteredMenu = menu.filter((item)=>{
-            if(item.category === category){
-                return item;
-            }
-           
+    filterBtns.forEach(function (filterBtn) {
+        filterBtn.addEventListener('click', function (e) {
+            const category = e.currentTarget.dataset.category;
+            // console.log(category);
+            const filteredMenu = menu.filter((item) => {
+                if (item.category === category) {
+                    return item;
+                }
 
+
+            })
+            if (category === 'all') {
+                displayMenu(menu);
+            }
+            else {
+                displayMenu(filteredMenu);
+            }
         })
-        if(category === 'all'){
-            displayMenu(menu);
-        }
-        else{
-            displayMenu(filteredMenu);
-        }
     })
-})
 }
 
 // FAQ
 
 const questions = document.querySelectorAll('.question');
 
-questions.forEach((question)=>{
+questions.forEach((question) => {
     const btn = question.querySelector('.question-btn');
-    btn.addEventListener('click',()=>{
-       questions.forEach(function(item){
-        if(item !== question){
-            item.classList.remove('show-text');
-        }
-       })
-       question.classList.toggle('show-text');
+    btn.addEventListener('click', () => {
+        questions.forEach(function (item) {
+            if (item !== question) {
+                item.classList.remove('show-text');
+            }
+        })
+        question.classList.toggle('show-text');
     })
 })
 
@@ -261,14 +261,14 @@ const about = document.querySelector('.aboutcontainer');
 const btns = document.querySelectorAll('.tab-btn');
 const articles = document.querySelectorAll('.content');
 
-about.addEventListener('click',(e)=>{
+about.addEventListener('click', (e) => {
     const id = e.target.dataset.id;
-    if(id){
-        btns.forEach((btn)=>{
+    if (id) {
+        btns.forEach((btn) => {
             btn.classList.remove('active');
         })
         e.target.classList.add('active');
-        articles.forEach((article)=>{
+        articles.forEach((article) => {
             article.classList.remove('active')
         });
         const element = document.getElementById(id);
@@ -281,19 +281,19 @@ about.addEventListener('click',(e)=>{
 const navBar = document.getElementById('nav');
 const topLink = document.querySelector('.top-link');
 
-window.addEventListener('scroll',(e)=>{
+window.addEventListener('scroll', (e) => {
     const scrolllHeight = window.pageYOffset;
     const navHeight = navBar.getBoundingClientRect().height;
-    if(scrolllHeight > navHeight){
+    if (scrolllHeight > navHeight) {
         navBar.classList.add('fixed-nav');
     }
-    else{
+    else {
         navBar.classList.remove('fixed-nav')
     }
-    if(scrolllHeight > 500){
+    if (scrolllHeight > 500) {
         topLink.classList.add('show-link');
     }
-    else{
+    else {
         topLink.classList.remove('show-link')
     }
 })
